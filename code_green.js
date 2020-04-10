@@ -22,3 +22,13 @@ function toggleItem() {
     this.parentNode.className = "accordionItem open";
   }
 }
+
+function specificIncidentReveal() {
+  var checkBox = document.getElementById("praiseType1");
+  var incidentDetails = document.getElementById("whatHappened");
+  if (checkBox.checked == true) {
+    incidentDetails.style.display = "block";
+  } else {
+    incidentDetails.style.display = "none";
+  }
+}

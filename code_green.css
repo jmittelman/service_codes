@@ -127,12 +127,12 @@
     details 
  ----------------------  */
 
-.detailsHeader {
+/* .detailsHeader {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin-bottom: 0 auto 50px auto;
-}
+} */
 
 .names {
   width: 40%;
@@ -146,7 +146,7 @@
 
 .detailsSource {
   width: 80%;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-top: 20px;
 }
 
@@ -155,9 +155,18 @@
   margin-bottom: 15px;
 }
 
+#praiseType1,
+#praiseType2 {
+  margin-bottom: 15px;
+}
+
 .externalDetails {
-  margin-top: 30px;
-  margin-left: 100px;
+  margin-top: 10px;
+  margin-left: 50px;
+  display: none;
+}
+
+#whatHappened {
   display: none;
 }
 
@@ -165,7 +174,11 @@
     what happened? 
  ----------------------  */
 
-#experienceContent {
+.experienceDate {
+  margin-bottom: 30px;
+}
+
+.experienceContent {
   display: flex;
   justify-content: space-between;
 }
