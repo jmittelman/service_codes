@@ -8,18 +8,88 @@
     <link rel="stylesheet" href="code_green.css" />
   </head>
   <body>
+    <div class="titleBlock">
+      <span class="dot"></span>
+      <h1>Code Green</h1>
+    </div>
+
+    <div class="subTitle">
+      <h3>Service Recognition Form</h3>
+      <h4>
+        Use this form to document exemplary service displayed by a co-worker.
+      </h4>
+    </div>
+
     <form>
       <div class="accordionWrapper">
         <div class="accordionItem open">
           <h2 class="accordionItemHeading">Details</h2>
 
           <div class="accordionItemContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div class="detailsHeader">
+              <div class="names">
+                <label for="name">Full name:</label><br />
+                <input type="text" id="name" name="name" /><br /><br />
+
+                <label for="employeeName">Employee recognized:</label><br />
+                <input
+                  type="text"
+                  id="employeeName"
+                  name="employeeName"
+                /><br /><br />
+              </div>
+
+              <div class="dates">
+                <label for="entryDate">Date:</label><br />
+                <input
+                  type="date"
+                  id="entryDate"
+                  name="entryDate"
+                /><br /><br />
+
+                <label for="greatnessDate">Date of greatness:</label><br />
+                <input type="date" id="greatnessDate" name="greatnessDate" />
+                <br /><br />
+              </div>
+            </div>
+
+            <div class="detailsSource">
+              <input
+                type="checkbox"
+                id="source1"
+                name="source1"
+                value="Internal"
+              />
+              <label for="source1"> Internal</label><br />
+
+              <input
+                type="checkbox"
+                id="source2"
+                onclick="externalDetailsReveal()"
+                name="source2"
+                value="External"
+              />
+              <label for="source2"> External</label><br />
+            </div>
+
+            <div class="externalDetails" id="externalDetails">
+              <label for="guestName">Guest's name:</label><br />
+              <input type="text" id="guestName" name="guestName" /><br /><br />
+
+              <label for="guestEmail">Email:</label><br />
+              <input
+                type="text"
+                id="guestEmail"
+                name="guestEmail"
+              /><br /><br />
+
+              <label for="guestPhone">Phone:</label><br />
+              <input
+                type="text"
+                id="guestPhone"
+                name="guestPhone"
+              /><br /><br />
+            </div>
           </div>
         </div>
 

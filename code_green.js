@@ -1,3 +1,13 @@
+function externalDetailsReveal() {
+  var checkBox = document.getElementById("source2");
+  var guestDetails = document.getElementById("externalDetails");
+  if (checkBox.checked == true) {
+    guestDetails.style.display = "block";
+  } else {
+    guestDetails.style.display = "none";
+  }
+}
+
 var accItem = document.getElementsByClassName("accordionItem");
 var accHD = document.getElementsByClassName("accordionItemHeading");
 for (i = 0; i < accHD.length; i++) {
