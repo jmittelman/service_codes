@@ -22,6 +22,10 @@
 
     <form>
       <div class="accordionWrapper">
+        <!-- ---------------
+         details
+        ---------------- -->
+
         <div class="accordionItem open">
           <h2 class="accordionItemHeading">Details</h2>
 
@@ -93,42 +97,216 @@
           </div>
         </div>
 
+        <!-- ---------------
+         What Happened?
+        ---------------- -->
+
         <div class="accordionItem close">
           <h2 class="accordionItemHeading">What Happened?</h2>
 
-          <div class="accordionItemContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+          <div class="accordionItemContent" id="experienceContent">
+            <div class="guestMood">
+              <h4>Indicate the guest's reaction:</h4>
+            </div>
+
+            <div class="guestExperience">
+              <h4>What did the guest love?</h4>
+
+              <div class="experienceOptions">
+                <input
+                  type="checkbox"
+                  id="experience1"
+                  name="experience1"
+                  value="experience1"
+                />
+                <label for="experience1">
+                  Loved the external service (marketing, communications,
+                  etc.)</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="experience2"
+                  name="experience2"
+                  value="experience2"
+                />
+                <label for="experience2"> Loved the in-store setting</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="experience3"
+                  name="experience3"
+                  value="experience3"
+                />
+                <label for="experience3"> Loved the entire experience</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="experience4"
+                  name="experience4"
+                  value="experience4"
+                />
+                <label for="experience4"> Loved the products</label><br />
+
+                <input
+                  type="checkbox"
+                  id="experience5"
+                  name="experience5"
+                  value="experience5"
+                />
+                <label for="experience5">
+                  Loved the presentation/ merchandising </label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="experience6"
+                  name="experience6"
+                  value="experience6"
+                />
+                <label for="experience6"> Loved the prices</label><br />
+
+                <input
+                  type="checkbox"
+                  id="experience7"
+                  name="experience7"
+                  value="experience7"
+                />
+                <label for="experience7"> Loved how clean the store was</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="experience8"
+                  name="experience8"
+                  value="experience8"
+                />
+                <label for="experience8"> Other</label><br />
+              </div>
+
+              <div class="experienceDetails">
+                <h4>Write down key info to describe the situation:</h4>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br /><br />
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- ---------------
+         Recognition
+        ---------------- -->
 
         <div class="accordionItem close">
           <h2 class="accordionItemHeading">Recognition</h2>
 
           <div class="accordionItemContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div class="awardsContent">
+              <div class="awardOptions">
+                <h4>
+                  Should this person receive a service award?
+                </h4>
+                <div class="awardOptionsList">
+                  <input
+                    type="checkbox"
+                    id="award1"
+                    name="award1"
+                    value="award1"
+                  />
+                  <label for="award1"> Service Star Nomination</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="award2"
+                    name="award2"
+                    value="award2"
+                  />
+                  <label for="award2"> Xtra-Mile File</label><br />
+
+                  <input
+                    type="checkbox"
+                    id="award3"
+                    name="award3"
+                    value="award3"
+                  />
+                  <label for="award3"> Evergreen Nomination</label><br />
+                </div>
+              </div>
+
+              <div class="awardReasons">
+                <h4>If so, please add your reason(s) / describe why:</h4>
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br /><br />
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- ---------------
+         Follow Up
+        ---------------- -->
 
         <div class="accordionItem close">
           <h2 class="accordionItemHeading">Follow Up</h2>
 
           <div class="accordionItemContent">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <div class="followUpActions">
+              <div class="followUpActionsList">
+                <h4>What further action should be taken?</h4>
+                <input
+                  type="checkbox"
+                  id="followUp1"
+                  name="followUp1"
+                  value="followUp1"
+                />
+                <label for="followUp1"> Thank you note</label><br />
+
+                <input
+                  type="checkbox"
+                  id="followUp2"
+                  name="followUp2"
+                  value="followUp2"
+                />
+                <label for="followUp2"> Verbal thanks/ appreciation</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="followUp3"
+                  name="followUp3"
+                  value="followUp3"
+                />
+                <label for="followUp3"> Gift card</label><br />
+
+                <input
+                  type="checkbox"
+                  id="followUp4"
+                  name="followUp4"
+                  value="followUp4"
+                />
+                <label for="followUp4"> Other</label><br />
+
+                <div class="followUpPerson">
+                  <h4>Who should follow up?</h4>
+
+                  <label for="employeeName">Employee name:</label><br />
+                  <input
+                    type="text"
+                    id="employeeName"
+                    name="employeeName"
+                  /><br /><br />
+                </div>
+              </div>
+
+              <div class="followUpActionsComments">
+                <h4>Comments:</h4>
+
+                <textarea name="message" rows="10" cols="30"></textarea>
+                <br /><br />
+              </div>
+            </div>
           </div>
         </div>
       </div>

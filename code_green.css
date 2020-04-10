@@ -160,3 +160,57 @@
   margin-left: 100px;
   display: none;
 }
+
+/* --------------------
+    what happened? 
+ ----------------------  */
+
+#experienceContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guestMood {
+  height: 600px;
+  background-color: lightskyblue;
+  width: 35%;
+}
+
+.guestExperience {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceDetails textarea {
+  width: 600px;
+  height: 300px;
+}
+
+/* --------------------
+    Recognition
+ ----------------------  */
+
+.awardsContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.awardReasons textarea {
+  width: 600px;
+  height: 300px;
+}
+
+/* --------------------
+    Follow Up
+ ----------------------  */
+
+.followUpActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.followUpActionsComments textarea {
+  width: 600px;
+  height: 300px;
+}
