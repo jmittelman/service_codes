@@ -3,27 +3,43 @@
 --------------------- */
 
 .titleBlock {
-  margin: 30px 30px;
+  margin: 30px 130px;
   display: flex;
   justify-content: space-between;
-  width: 225px;
+  width: 290px;
 }
 
 .titleBlock h1 {
-  margin: 0;
-  color: #2980b9;
+  margin: -4px 0 0 0;
+  color: #7f8c8d;
+  font-family: Fira Sans, sans-serif;
+  font-style: italic;
+}
+
+.titleText h3 {
+  margin-top: 3px;
+  /* color: #b65c5b; */
+  color: #9cb2bc;
+  font-family: Montserrat, sans-serif;
 }
 
 .dot {
-  height: 40px;
-  width: 40px;
-  background-color: green;
+  height: 50px;
+  width: 50px;
+  background-color: #7db564;
   border-radius: 50%;
   display: inline-block;
+  transform: skewY(-20deg);
+  box-shadow: 5px 5px 2px #b65c5b;
 }
 
 .subTitle {
-  margin-left: 70px;
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.subTitle h4 {
+  margin: 15px auto;
 }
 
 /* ---------------
@@ -35,8 +51,10 @@
   float: left;
   width: 80%;
   box-sizing: border-box;
-  margin: 3% 10% 10% 10%;
+  margin: 0% 10% 10% 10%;
   box-shadow: 0 1.5em 85px 0 rgba(0, 0, 0, 0.2);
+  color: #7f8c8d;
+  font-family: Montserrat, sans-serif;
 }
 .accordionItem {
   float: left;
@@ -49,7 +67,7 @@
   cursor: pointer;
   margin: 0px 0px 10px 0px;
   padding: 10px;
-  background: #2980b9;
+  background: #9cb2bc;
   color: #fff;
   width: 100%;
   -webkit-border-radius: 3px;
