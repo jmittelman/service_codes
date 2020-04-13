@@ -128,3 +128,39 @@ function consistentGreatnessReveal() {
     followUpContent.style.display = "none";
   }
 }
+
+function indicatorEcstaticReveal() {
+  var x = document.getElementById("ecstaticInd");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function indicatorExcitedReveal() {
+  var x = document.getElementById("excitedInd");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function indicatorHappyReveal() {
+  var x = document.getElementById("happyInd");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function indicatorPleasedReveal() {
+  var x = document.getElementById("pleasedInd");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

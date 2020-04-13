@@ -307,3 +307,95 @@
   color: white;
   background-color: #7f8c8d;
 }
+
+/* ------------------
+      mood gauge
+------------------*/
+
+.moodMeter {
+  position: relative;
+}
+
+.moodGauge {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.moodGaugeContainer {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 75px;
+  height: 204px;
+  width: 42px;
+  border: 1px solid black;
+  background-color: #d1d1d1;
+}
+
+.moodGaugeSection {
+  display: block;
+  width: 42px;
+  height: 50px;
+  border-bottom: 1px solid black;
+}
+
+#checkboxes input[type="checkbox"] {
+  display: none;
+}
+
+#checkboxes input[type="checkbox"]:checked + .moodGaugeSection {
+  background-color: #d1d1d1;
+  /* background-image: linear-gradient(#7db564 50%, #d3e359); */
+}
+
+.moodList {
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.moodList li {
+  margin-top: 30px;
+}
+
+.ecstatic {
+  background-color: #308534;
+  width: 35px;
+  height: 200px;
+  display: none;
+  top: 53px;
+  left: 160px;
+}
+
+.excited {
+  background-color: #308534;
+  width: 35px;
+  height: 150px;
+  /* display: none; */
+  top: 103px;
+  left: 160px;
+}
+
+.happy {
+  background-color: #308534;
+  width: 35px;
+  height: 100px;
+  display: none;
+  top: 153px;
+  left: 160px;
+}
+
+.pleased {
+  background-color: #308534;
+  width: 35px;
+  height: 50px;
+  display: none;
+  top: 203px;
+  left: 160px;
+}
+
+.indicator {
+  position: absolute;
+
+  border: black 1px solid;
+  background-image: linear-gradient(#7db564 50%, #d3e359);
+}
