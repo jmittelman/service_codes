@@ -173,6 +173,16 @@
   margin-bottom: 15px;
 }
 
+#source3,
+#source4 {
+  margin-bottom: 15px;
+}
+
+#target1,
+#target2 {
+  margin-bottom: 15px;
+}
+
 #praiseType1,
 #praiseType2 {
   margin-bottom: 15px;
@@ -184,26 +194,58 @@
   display: none;
 }
 
-#whatHappened {
+#whatWasGreat {
+  display: none;
+}
+
+#allExperienceContent {
+  display: none;
+}
+
+#allEmployeeContent {
+  display: none;
+}
+
+#recognition {
+  display: none;
+}
+
+#followUp {
+  display: none;
+}
+
+#specificPraise {
+  display: none;
+}
+
+#whatIsGreat {
+  display: none;
+}
+
+#guestPerspectiveContent {
+  display: none;
+}
+
+#specificEmployeeWhatWasGreat {
   display: none;
 }
 
 /* --------------------
-    what happened? 
+    what was great? 
  ----------------------  */
 
 .experienceDate {
   margin-bottom: 30px;
 }
 
-.experienceContent {
+.experienceContent,
+.employeeExperienceContent {
   display: flex;
   justify-content: space-between;
 }
 
 .guestMood {
   height: 600px;
-  background-color: lightskyblue;
   width: 35%;
 }
 
@@ -244,4 +286,24 @@
 .followUpActionsComments textarea {
   width: 600px;
   height: 300px;
+}
+
+/* --------------------
+         End
+-----------------------*/
+
+.submitButton {
+  margin: 50px 46%;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  font-size: 18px;
+  color: white;
+  background-color: #7db564;
+  border-radius: 5px;
+}
+
+.submitButton:hover {
+  color: white;
+  background-color: #7f8c8d;
 }

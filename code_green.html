@@ -41,8 +41,94 @@
               <input type="text" id="name" name="name" /><br /><br />
 
               <h4>
+                Is this about a particular employee or general praise of the
+                store?
+              </h4>
+
+              <div class="praiseTarget">
+                <input
+                  type="checkbox"
+                  id="target1"
+                  onclick="specificPraiseReveal()"
+                  name="target1"
+                  value="employee"
+                />
+                <label for="target1">
+                  This is about a particular employee.</label
+                ><br />
+
+                <input
+                  type="checkbox"
+                  id="target2"
+                  onclick="generalPraiseReveal()"
+                  name="target2"
+                  value="target2"
+                />
+                <label for="target2">
+                  This is general praise of the store.</label
+                ><br />
+              </div>
+
+              <div class="specificPraise" id="specificPraise">
+                <h4>Who do you want to recognize?</h4>
+
+                <input
+                  type="text"
+                  id="employeeName"
+                  name="employeeName"
+                /><br /><br />
+
+                <h4>
+                  Is this for a specific interaction with a guest or to
+                  acknowledge consistently great job performance?
+                </h4>
+
+                <div class="praiseType">
+                  <input
+                    type="checkbox"
+                    id="praiseType1"
+                    onclick="specificIncidentReveal()"
+                    name="praiseType1"
+                    value="Specific"
+                  />
+                  <label for="praiseType1">
+                    This is about a specific interaction with a guest.</label
+                  ><br />
+
+                  <input
+                    type="checkbox"
+                    id="praiseType2"
+                    onclick="consistentGreatnessReveal()"
+                    name="praiseType2"
+                    value="General"
+                  />
+                  <label for="praiseType2">
+                    This is to acknowledge consistent greatness.</label
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------------
+         What Was Great?
+        ---------------- -->
+
+        <div class="accordionItem close" id="whatWasGreat">
+          <h2 class="accordionItemHeading">What was great?</h2>
+
+          <div class="accordionItemContent">
+            <div class="experienceDate">
+              <h4>When did this happen?</h4>
+              <input type="date" id="greatnessDate" name="greatnessDate" />
+              <br /><br />
+            </div>
+
+            <div class="whoseBehalf">
+              <h4>
                 Are you providing this recognition personally, or are you
-                sharing it on someone else's behalf*?
+                sharing it on behalf of a customer/ guest*?
               </h4>
               <h6>
                 (*ie, praise received from a guest in person or by phone, email,
@@ -53,6 +139,7 @@
                 <input
                   type="checkbox"
                   id="source1"
+                  onclick="internalDetailsReveal()"
                   name="source1"
                   value="Internal"
                 />
@@ -67,6 +154,10 @@
                 />
                 <label for="source2"> This is for someone else.</label><br />
               </div>
+
+              <!---------------
+                 general praise from guest 
+                ---------------------->
 
               <div class="externalDetails" id="externalDetails">
                 <label for="guestName">Guest's name:</label><br />
@@ -90,50 +181,220 @@
                   name="guestPhone"
                 /><br /><br />
               </div>
+            </div>
 
-              <h4>Who do you want to recognize?</h4>
+            <div class="allExperienceContent" id="allExperienceContent">
+              <div class="experienceContent">
+                <div class="guestMood">
+                  <h4>Indicate the guest's reaction:</h4>
+                </div>
 
-              <input
-                type="text"
-                id="employeeName"
-                name="employeeName"
-              /><br /><br />
+                <div class="guestExperience">
+                  <h4>What did the guest love?</h4>
 
-              <h4>
-                Is this for a specific interaction/ event or just general
-                praise?
-              </h4>
+                  <div class="experienceOptions">
+                    <input
+                      type="checkbox"
+                      id="experience1"
+                      name="experience1"
+                      value="experience1"
+                    />
+                    <label for="experience1">
+                      The external service (marketing, communications,
+                      etc.)</label
+                    ><br />
 
-              <div class="praiseType">
-                <input
-                  type="checkbox"
-                  id="praiseType2"
-                  name="praiseType2"
-                  value="General"
-                />
-                <label for="praiseType2"> This is general praise.</label><br />
+                    <input
+                      type="checkbox"
+                      id="experience2"
+                      name="experience2"
+                      value="experience2"
+                    />
+                    <label for="experience2"> The in-store setting</label><br />
 
-                <input
-                  type="checkbox"
-                  id="praiseType1"
-                  onclick="specificIncidentReveal()"
-                  name="praiseType1"
-                  value="Specific"
-                />
-                <label for="praiseType1">
-                  This is about a specific interaction.</label
-                ><br />
+                    <input
+                      type="checkbox"
+                      id="experience3"
+                      name="experience3"
+                      value="experience3"
+                    />
+                    <label for="experience3"> The entire experience</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience4"
+                      name="experience4"
+                      value="experience4"
+                    />
+                    <label for="experience4"> The products</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience5"
+                      name="experience5"
+                      value="experience5"
+                    />
+                    <label for="experience5">
+                      The presentation/ merchandising </label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience6"
+                      name="experience6"
+                      value="experience6"
+                    />
+                    <label for="experience6"> The prices</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience7"
+                      name="experience7"
+                      value="experience7"
+                    />
+                    <label for="experience7"> How clean the store was</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience8"
+                      name="experience8"
+                      value="experience8"
+                    />
+                    <label for="experience8"> The staff/ team</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience9"
+                      name="experience9"
+                      value="experience9"
+                    />
+                    <label for="experience9"> Other</label><br />
+                  </div>
+
+                  <div class="experienceDetails">
+                    <h4>
+                      Write down key info to describe the situation and include
+                      staff who should be recognized:
+                    </h4>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <br /><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!---------------- 
+            general praise from employee
+            ----------------- -->
+
+            <div class="allEmployeeContent" id="allEmployeeContent">
+              <div class="employeeExperienceContent">
+                <div class="employeeExperience">
+                  <h4>What impressed you about the store?</h4>
+
+                  <div class="experienceOptions">
+                    <input
+                      type="checkbox"
+                      id="experience1"
+                      name="experience1"
+                      value="experience1"
+                    />
+                    <label for="experience1">
+                      The external service (marketing, communications,
+                      etc.)</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience2"
+                      name="experience2"
+                      value="experience2"
+                    />
+                    <label for="experience2"> The in-store setting</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience3"
+                      name="experience3"
+                      value="experience3"
+                    />
+                    <label for="experience3"> The entire experience</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience4"
+                      name="experience4"
+                      value="experience4"
+                    />
+                    <label for="experience4"> The products</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience5"
+                      name="experience5"
+                      value="experience5"
+                    />
+                    <label for="experience5">
+                      The presentation/ merchandising </label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience6"
+                      name="experience6"
+                      value="experience6"
+                    />
+                    <label for="experience6"> The prices</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience7"
+                      name="experience7"
+                      value="experience7"
+                    />
+                    <label for="experience7"> How clean the store was</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience8"
+                      name="experience8"
+                      value="experience8"
+                    />
+                    <label for="experience8"> The staff/ team</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience9"
+                      name="experience9"
+                      value="experience9"
+                    />
+                    <label for="experience9"> Other</label><br />
+                  </div>
+
+                  <div class="experienceDetails">
+                    <h4>
+                      Write down key info to describe the situation and include
+                      staff who should be recognized:
+                    </h4>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <br /><br />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <!-- ---------------
-         What Happened?
+         What Was Great? 2
         ---------------- -->
 
-        <div class="accordionItem close" id="whatHappened">
-          <h2 class="accordionItemHeading">What Happened?</h2>
+        <div class="accordionItem close" id="specificEmployeeWhatWasGreat">
+          <h2 class="accordionItemHeading">What was great?</h2>
 
           <div class="accordionItemContent">
             <div class="experienceDate">
@@ -142,92 +403,275 @@
               <br /><br />
             </div>
 
-            <div class="experienceContent">
-              <div class="guestMood">
-                <h4>Indicate the guest's reaction:</h4>
+            <div class="whoseBehalf">
+              <h4>
+                Are you providing this recognition personally, or are you
+                sharing it on behalf of a customer/ guest*?
+              </h4>
+              <h6>
+                (*ie, praise received from a guest in person or by phone, email,
+                social media, etc.)
+              </h6>
+
+              <div class="detailsSource">
+                <input
+                  type="checkbox"
+                  id="source3"
+                  onclick="internalDetailsReveal1()"
+                  name="source3"
+                  value="Internal"
+                />
+                <label for="source3"> This is from me!</label><br />
+
+                <input
+                  type="checkbox"
+                  id="source4"
+                  onclick="externalDetailsReveal2()"
+                  name="source4"
+                  value="External"
+                />
+                <label for="source3"> This is for someone else.</label><br />
               </div>
 
-              <div class="guestExperience">
-                <h4>What did the guest love?</h4>
+              <!---------------
+                 specific event feedback  
+                ---------------------->
 
-                <div class="experienceOptions">
-                  <input
-                    type="checkbox"
-                    id="experience1"
-                    name="experience1"
-                    value="experience1"
-                  />
-                  <label for="experience1">
-                    Loved the external service (marketing, communications,
-                    etc.)</label
-                  ><br />
+              <div class="externalDetails" id="externalDetails">
+                <label for="guestName">Guest's name:</label><br />
+                <input
+                  type="text"
+                  id="guestName"
+                  name="guestName"
+                /><br /><br />
 
-                  <input
-                    type="checkbox"
-                    id="experience2"
-                    name="experience2"
-                    value="experience2"
-                  />
-                  <label for="experience2"> Loved the in-store setting</label
-                  ><br />
+                <label for="guestEmail">Email:</label><br />
+                <input
+                  type="text"
+                  id="guestEmail"
+                  name="guestEmail"
+                /><br /><br />
 
-                  <input
-                    type="checkbox"
-                    id="experience3"
-                    name="experience3"
-                    value="experience3"
-                  />
-                  <label for="experience3"> Loved the entire experience</label
-                  ><br />
+                <label for="guestPhone">Phone:</label><br />
+                <input
+                  type="text"
+                  id="guestPhone"
+                  name="guestPhone"
+                /><br /><br />
+              </div>
+            </div>
 
-                  <input
-                    type="checkbox"
-                    id="experience4"
-                    name="experience4"
-                    value="experience4"
-                  />
-                  <label for="experience4"> Loved the products</label><br />
-
-                  <input
-                    type="checkbox"
-                    id="experience5"
-                    name="experience5"
-                    value="experience5"
-                  />
-                  <label for="experience5">
-                    Loved the presentation/ merchandising </label
-                  ><br />
-
-                  <input
-                    type="checkbox"
-                    id="experience6"
-                    name="experience6"
-                    value="experience6"
-                  />
-                  <label for="experience6"> Loved the prices</label><br />
-
-                  <input
-                    type="checkbox"
-                    id="experience7"
-                    name="experience7"
-                    value="experience7"
-                  />
-                  <label for="experience7"> Loved how clean the store was</label
-                  ><br />
-
-                  <input
-                    type="checkbox"
-                    id="experience8"
-                    name="experience8"
-                    value="experience8"
-                  />
-                  <label for="experience8"> Other</label><br />
+            <div class="guestPerspectiveContent" id="guestPerspectiveContent">
+              <div class="experienceContent">
+                <div class="guestMood">
+                  <h4>Indicate the guest's reaction:</h4>
                 </div>
 
-                <div class="experienceDetails">
-                  <h4>Write down key info to describe the situation:</h4>
-                  <textarea name="message" rows="10" cols="30"></textarea>
-                  <br /><br />
+                <div class="guestExperience">
+                  <h4>
+                    What did the guest love about the employee they interacted
+                    with?
+                  </h4>
+
+                  <div class="experienceOptions">
+                    <input
+                      type="checkbox"
+                      id="experience1"
+                      name="experience1"
+                      value="experience1"
+                    />
+                    <label for="experience1">
+                      Friendly: enthusiastic, good attitude</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience2"
+                      name="experience2"
+                      value="experience2"
+                    />
+                    <label for="experience2"> Helpful: problem-solver</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience3"
+                      name="experience3"
+                      value="experience3"
+                    />
+                    <label for="experience3">
+                      Knowledgeable: product, service, store policies</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience4"
+                      name="experience4"
+                      value="experience4"
+                    />
+                    <label for="experience4">
+                      Caring: empathetic, patient, attentive</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience5"
+                      name="experience5"
+                      value="experience5"
+                    />
+                    <label for="experience5">
+                      Communication: good listener, articulate, good explainer </label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience6"
+                      name="experience6"
+                      value="experience6"
+                    />
+                    <label for="experience6"> Went the extra mile</label><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience7"
+                      name="experience7"
+                      value="experience7"
+                    />
+                    <label for="experience7"> Other</label><br />
+                  </div>
+
+                  <div class="experienceDetails">
+                    <h4>
+                      Write down key info to describe the situation:
+                    </h4>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <br /><br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--------------------
+            consistent greatness
+            ---------------------------->
+
+        <div class="accordionItem close" id="whatIsGreat">
+          <h2 class="accordionItemHeading">
+            What is great about this employee?
+          </h2>
+
+          <div class="accordionItemContent">
+            <div
+              class="consistentGreatnessContent"
+              id="consistentGreatnessContent"
+            >
+              <div class="experienceContent">
+                <div class="guestExperience">
+                  <h4>
+                    In what way(s) does this employee demonstrate consistently
+                    great job performance?
+                  </h4>
+
+                  <div class="experienceOptions">
+                    <input
+                      type="checkbox"
+                      id="experience1"
+                      name="experience1"
+                      value="experience1"
+                    />
+                    <label for="experience1"> Committed to great service</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience2"
+                      name="experience2"
+                      value="experience2"
+                    />
+                    <label for="experience2">
+                      Reliable: on-time, on-task, works independently, knows
+                      store systems and processes</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience3"
+                      name="experience3"
+                      value="experience3"
+                    />
+                    <label for="experience3">
+                      Adaptable: willingness to learn, willingness to try new
+                      things</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience4"
+                      name="experience4"
+                      value="experience4"
+                    />
+                    <label for="experience4">
+                      Great work ethic and initiative</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience5"
+                      name="experience5"
+                      value="experience5"
+                    />
+                    <label for="experience5">
+                      Team player: works well with others, positive attitude </label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience6"
+                      name="experience6"
+                      value="experience6"
+                    />
+                    <label for="experience6">
+                      Willingness to go the extra mile for customers</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience7"
+                      name="experience7"
+                      value="experience7"
+                    />
+                    <label for="experience7">
+                      Stress management: cool under pressure</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience8"
+                      name="experience8"
+                      value="experience8"
+                    />
+                    <label for="experience8">
+                      Organization and prioritization: time-management</label
+                    ><br />
+
+                    <input
+                      type="checkbox"
+                      id="experience9"
+                      name="experience9"
+                      value="experience9"
+                    />
+                    <label for="experience9"> Other</label><br />
+                  </div>
+
+                  <div class="experienceDetails">
+                    <h4>
+                      Write down key info to further describe your observations:
+                    </h4>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+                    <br /><br />
+                  </div>
                 </div>
               </div>
             </div>
@@ -238,14 +682,14 @@
          Recognition
         ---------------- -->
 
-        <div class="accordionItem close">
+        <div class="accordionItem close" id="recognition">
           <h2 class="accordionItemHeading">Recognition</h2>
 
           <div class="accordionItemContent">
             <div class="awardsContent">
               <div class="awardOptions">
                 <h4>
-                  Should this person receive a service award?
+                  Should we give a service award?
                 </h4>
                 <div class="awardOptionsList">
                   <input
@@ -287,7 +731,7 @@
          Follow Up
         ---------------- -->
 
-        <div class="accordionItem close">
+        <div class="accordionItem close" id="followUp">
           <h2 class="accordionItemHeading">Follow Up</h2>
 
           <div class="accordionItemContent">
@@ -348,6 +792,8 @@
             </div>
           </div>
         </div>
+
+        <input type="submit" value="Submit" class="submitButton" />
       </div>
     </form>
 
