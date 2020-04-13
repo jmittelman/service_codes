@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Green Dashboard</title>
+    <link rel="stylesheet" href="code_green_dashboard.css" />
+  </head>
+  <body>
+    <div class="titleBlock">
+      <span class="dot"></span>
+
+      <div class="titleText">
+        <h1>Code Green</h1>
+        <h3>Service Recognition Dashboard</h3>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="addNew">
+        <button class="newCodeGreen">+</button>
+        <p>Add New</p>
+      </div>
+      <button class="search">Search...</button>
+      <p>Sort By &or;</p>
+      <p></p>
+
+      <div class="viewArchive">
+        <button class="archive"></button>
+        <p>View Archive</p>
+      </div>
+    </div>
+
+    <table class="TFtable">
+      <tr>
+        <th>Assigned To</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Employee</th>
+        <th>Next Step</th>
+        <th>Action</th>
+      </tr>
+
+      <tr>
+        <td>Michael</td>
+        <td>4/1/20</td>
+        <td>Open</td>
+        <td>Jordan</td>
+        <td>Card</td>
+        <td>
+          <button type="button" class="collapsible">&or;</button>
+          <div class="content">
+            <p>View/Edit</p>
+            <p>Complete</p>
+            <p>Delete</p>
+            <p>Assign as Task</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Laura</td>
+        <td>4/1/20</td>
+        <td>Open</td>
+        <td>David</td>
+        <td>Email</td>
+        <td>
+          <button type="button" class="collapsible">&or;</button>
+          <div class="content">
+            <p>View/Edit</p>
+            <p>Complete</p>
+            <p>Delete</p>
+            <p>Assign as Task</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Paul</td>
+        <td>4/2/20</td>
+        <td>Open</td>
+        <td>Megan</td>
+        <td>Award</td>
+        <td>
+          <button type="button" class="collapsible">&or;</button>
+          <div class="content">
+            <p>View/Edit</p>
+            <p>Complete</p>
+            <p>Delete</p>
+            <p>Assign as Task</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Casey</td>
+        <td>4/3/20</td>
+        <td>Open</td>
+        <td>David</td>
+        <td>Card</td>
+        <td>
+          <button type="button" class="collapsible">&or;</button>
+          <div class="content">
+            <p>View/Edit</p>
+            <p>Complete</p>
+            <p>Delete</p>
+            <p>Assign as Task</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
