@@ -1,0 +1,147 @@
+/* -------------------
+       header
+--------------------- */
+
+.titleBlock {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.titleBlock h1 {
+  margin: -4px 0 0 0;
+  color: #7f8c8d;
+  font-family: Fira Sans, sans-serif;
+  font-style: italic;
+}
+
+.titleText h3 {
+  margin-top: 3px;
+  /* color: #b65c5b; */
+  color: #9cb2bc;
+  font-family: Montserrat, sans-serif;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  margin-right: 8px;
+  background-color: #b65c5b;
+  border-radius: 50%;
+  display: inline-block;
+  transform: skewY(-20deg);
+  box-shadow: 5px 5px 2px #7db564;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 40px auto;
+  color: #9cb2bc;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+
+.addNew {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.newCodeRed {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-color: #9cb2bc;
+  color: #9cb2bc;
+  font-family: Montserrat, sans-serif;
+  font-size: 30px;
+}
+
+.search {
+  width: 250px;
+  height: 60px;
+  text-align: left;
+  border-radius: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  color: #9cb2bc;
+  margin-right: 50px;
+}
+
+.archive {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.viewArchive {
+  margin-right: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ----------------
+table
+------------------ */
+
+.TFtable {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  z-index: 0.5;
+}
+.TFtable td {
+  padding: 15px;
+  border: black 1px solid;
+}
+
+.TFtable tr {
+  background: #d1d1d1;
+}
+
+.TFtable tr:nth-child(odd) {
+  background: #d1d1d1;
+}
+
+.TFtable tr:nth-child(even) {
+  background: #bdc3c7;
+}
+
+th {
+  height: 50px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.collapsible {
+  background-color: #d1d1d1;
+  color: #444;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border: black 1px solid;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 100px;
+  overflow: hidden;
+  background-color: #d1d1d1;
+  z-index: 1;
+}
